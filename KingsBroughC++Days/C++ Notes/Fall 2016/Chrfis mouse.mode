@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExportedMode>
+ <mode version="6" cookie="2">
+  <deviceModelName>Scimitar</deviceModelName>
+  <name>Chrfis mouse</name>
+  <buttonGroups/>
+  <id>{13df8434-fbe0-4e86-a6c6-32956ce72262}</id>
+  <note></note>
+  <script>{00000000-0000-0000-0000-000000000000}</script>
+  <skipped>0</skipped>
+  <currentPerformanceIndex>0</currentPerformanceIndex>
+  <performances>
+   <performance version="1" type="mouse" enhancePointerPrecision="0" liftHeight="5" name="Custom" pointerMotionSpeed="20">
+    <brightnessLevelIndex>1</brightnessLevelIndex>
+    <dpiSettings dpiCount="5">
+     <dpiSetting version="1" index="1" independentXY="0" enabled="1" dpiX="800"/>
+     <dpiSetting version="1" index="2" independentXY="0" enabled="1" default="1" dpiX="1500"/>
+     <dpiSetting version="1" index="3" independentXY="0" enabled="1" dpiX="3000"/>
+     <dpiSetting version="1" index="4" independentXY="0" enabled="1" dpiX="6000"/>
+     <dpiSetting version="1" index="5" independentXY="0" enabled="1" dpiX="9000"/>
+    </dpiSettings>
+    <sniperDpiSetting version="1" index="-1" independentXY="0" enabled="1" dpiX="800"/>
+   </performance>
+  </performances>
+  <clearedKeys>
+   <key>Mouse6</key>
+   <key>Mouse7</key>
+  </clearedKeys>
+  <assigments>
+   <assigment key="MouseG3" action="{f84fce64-f0d7-4a02-a7c8-091126ed2de6}"/>
+   <assigment key="Mouse2" action="{7d0f7952-8065-4601-a3f1-93d899b14eb2}"/>
+   <assigment key="Mouse3" action="{7d0f7952-8065-4601-a3f1-93d899b14eb2}"/>
+   <assigment key="Mouse1" action="{7d0f7952-8065-4601-a1f1-93d899b14eb2}"/>
+   <assigment key="MouseG12" action="{edeff255-03a8-4691-a481-9a2faf1378aa}"/>
+  </assigments>
+  <fgLightAssignments>
+   <fgLightAssignment fgLightAssignmentKey="MouseDpiLed" fgLightAssignmentValue="{0ee8303c-0d55-4156-a5be-f31537468cba}">
+    <ExecutionHints>
+     <StartOnPress>false</StartOnPress>
+     <StartWithMode>true</StartWithMode>
+     <StopOnPress>false</StopOnPress>
+     <StopOnRelease>false</StopOnRelease>
+    </ExecutionHints>
+   </fgLightAssignment>
+  </fgLightAssignments>
+  <fgBasicLightAssignments/>
+  <lightBackgrounds>
+   <groupBgLights/>
+   <keyBgLights/>
+  </lightBackgrounds>
+  <basicLightBackgrounds>
+   <groupBgLights/>
+   <keyBgLights/>
+  </basicLightBackgrounds>
+  <disabledLightings/>
+  <groupsData/>
+  <basicLightingsParameters>
+   <parameters basicLightingEffect="10">
+    <speed>2</speed>
+    <color>1</color>
+    <direction>0</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="11">
+    <speed>2</speed>
+    <color>0</color>
+    <direction>2</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="8">
+    <speed>2</speed>
+    <color>0</color>
+    <direction>0</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="9">
+    <speed>2</speed>
+    <color>1</color>
+    <direction>0</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="22">
+    <speed>0</speed>
+    <color>3</color>
+    <direction>3</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#51ff00</color>
+     <color order="2">#ff3300</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="6">
+    <speed>0</speed>
+    <color>0</color>
+    <direction>0</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="23">
+    <speed>0</speed>
+    <color>3</color>
+    <direction>3</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#51ff00</color>
+     <color order="2">#ff3300</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="7">
+    <speed>0</speed>
+    <color>2</color>
+    <direction>0</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="4">
+    <speed>2</speed>
+    <color>1</color>
+    <direction>0</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="21">
+    <speed>3</speed>
+    <color>0</color>
+    <direction>5</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="5">
+    <speed>2</speed>
+    <color>1</color>
+    <direction>0</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="2">
+    <speed>2</speed>
+    <color>1</color>
+    <direction>3</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="3">
+    <speed>0</speed>
+    <color>1</color>
+    <direction>0</direction>
+    <duration>2</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="0">
+    <speed>2</speed>
+    <color>0</color>
+    <direction>3</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+   <parameters basicLightingEffect="1">
+    <speed>2</speed>
+    <color>1</color>
+    <direction>0</direction>
+    <duration>0</duration>
+    <selectedColor>#ff0000</selectedColor>
+    <alternatingColors>
+     <color order="1">#ff0000</color>
+     <color order="2">#0000ff</color>
+    </alternatingColors>
+    <eqaliserPattern>1</eqaliserPattern>
+    <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+   </parameters>
+  </basicLightingsParameters>
+  <currentLightingEffect>6</currentLightingEffect>
+  <isInAdvancedLightingMode>1</isInAdvancedLightingMode>
+  <lighting_zones>
+   <lighting_zone type="3" name="1">
+    <currentLightingEffect>6</currentLightingEffect>
+    <basicLightingsParameters>
+     <parameters basicLightingEffect="6">
+      <speed>0</speed>
+      <color>0</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="7">
+      <speed>0</speed>
+      <color>2</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="5">
+      <speed>2</speed>
+      <color>1</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="0">
+      <speed>2</speed>
+      <color>0</color>
+      <direction>3</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="5">
+      <speed>2</speed>
+      <color>1</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+    </basicLightingsParameters>
+   </lighting_zone>
+   <lighting_zone type="4" name="3">
+    <currentLightingEffect>6</currentLightingEffect>
+    <basicLightingsParameters>
+     <parameters basicLightingEffect="6">
+      <speed>0</speed>
+      <color>0</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="7">
+      <speed>0</speed>
+      <color>2</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="5">
+      <speed>2</speed>
+      <color>1</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="0">
+      <speed>2</speed>
+      <color>0</color>
+      <direction>3</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="5">
+      <speed>2</speed>
+      <color>1</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+    </basicLightingsParameters>
+   </lighting_zone>
+   <lighting_zone type="2" name="2">
+    <currentLightingEffect>6</currentLightingEffect>
+    <basicLightingsParameters>
+     <parameters basicLightingEffect="6">
+      <speed>0</speed>
+      <color>0</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="7">
+      <speed>0</speed>
+      <color>2</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="5">
+      <speed>2</speed>
+      <color>1</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="0">
+      <speed>2</speed>
+      <color>0</color>
+      <direction>3</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="5">
+      <speed>2</speed>
+      <color>1</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+    </basicLightingsParameters>
+   </lighting_zone>
+   <lighting_zone type="1" name="4">
+    <currentLightingEffect>6</currentLightingEffect>
+    <basicLightingsParameters>
+     <parameters basicLightingEffect="6">
+      <speed>0</speed>
+      <color>0</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="7">
+      <speed>0</speed>
+      <color>2</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="5">
+      <speed>2</speed>
+      <color>1</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="0">
+      <speed>2</speed>
+      <color>0</color>
+      <direction>3</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+     <parameters basicLightingEffect="5">
+      <speed>2</speed>
+      <color>1</color>
+      <direction>0</direction>
+      <duration>0</duration>
+      <selectedColor>#ff0000</selectedColor>
+      <alternatingColors>
+       <color order="1">#ff0000</color>
+       <color order="2">#0000ff</color>
+      </alternatingColors>
+      <eqaliserPattern>1</eqaliserPattern>
+      <frequencyVisualizerAnimation>1</frequencyVisualizerAnimation>
+     </parameters>
+    </basicLightingsParameters>
+   </lighting_zone>
+  </lighting_zones>
+ </mode>
+ <Lightings/>
+ <Actions>
+  <Action version="7" Type="dpi">
+   <Id>{f84fce64-f0d7-4a02-a7c8-091126ed2de6}</Id>
+   <Name>DPI DOWN</Name>
+   <Note></Note>
+   <Date>2016-06-29</Date>
+   <BindCounter>3</BindCounter>
+   <Visible>1</Visible>
+   <Predefined>0</Predefined>
+   <ExecutionHints>
+    <ExecEvent>press</ExecEvent>
+    <TerminateWhenStartedAgain>false</TerminateWhenStartedAgain>
+    <RestartWhenStartedAgain>false</RestartWhenStartedAgain>
+   </ExecutionHints>
+   <RepeatOptions version="1">
+    <Mode>0</Mode>
+    <DelayMode>0</DelayMode>
+    <AmountOfRepeats>1</AmountOfRepeats>
+    <Delay>0</Delay>
+    <RandomDelayFrom>0</RandomDelayFrom>
+    <RandomDelayTo>0</RandomDelayTo>
+   </RepeatOptions>
+   <ActionLighting>{00000000-0000-0000-0000-000000000000}</ActionLighting>
+   <behavior version="1" type="4" apply="0" loop="0"/>
+  </Action>
+  <Action version="7" Type="dpi">
+   <Id>{edeff255-03a8-4691-a481-9a2faf1378aa}</Id>
+   <Name>DPI UP</Name>
+   <Note></Note>
+   <Date>2016-06-29</Date>
+   <BindCounter>2</BindCounter>
+   <Visible>1</Visible>
+   <Predefined>0</Predefined>
+   <ExecutionHints>
+    <ExecEvent>press</ExecEvent>
+    <TerminateWhenStartedAgain>false</TerminateWhenStartedAgain>
+    <RestartWhenStartedAgain>false</RestartWhenStartedAgain>
+   </ExecutionHints>
+   <RepeatOptions version="1">
+    <Mode>0</Mode>
+    <DelayMode>0</DelayMode>
+    <AmountOfRepeats>1</AmountOfRepeats>
+    <Delay>0</Delay>
+    <RandomDelayFrom>0</RandomDelayFrom>
+    <RandomDelayTo>0</RandomDelayTo>
+   </RepeatOptions>
+   <ActionLighting>{00000000-0000-0000-0000-000000000000}</ActionLighting>
+   <behavior version="1" type="3" apply="0" loop="0"/>
+  </Action>
+ </Actions>
+</ExportedMode>

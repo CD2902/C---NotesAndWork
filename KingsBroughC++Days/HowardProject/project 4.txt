@@ -1,0 +1,57 @@
+# include <iostream>
+# include <string>
+# include <iomanip>
+using namespace std;
+
+struct team
+{
+string pname;
+int pnumber;
+double pscore;
+};
+
+
+int main()
+{
+const int item=2;
+team team1[item];
+long int total=0;
+int high=0;
+int highp;
+
+for(int a=0; a<item; a++){
+cout<<"Enter Player "<<a+1<<" Name\n";
+cin>>team1[a].pname;
+
+cout<<"Enter Player "<<a+1<<" Number\n";
+cin>>team1[a].pnumber;
+
+
+cout<<"Enter Player "<<a+1<<" Score\n";
+cin>>team1[a].pscore;
+
+
+if(team1[a].pscore>high){
+high=team1[a].pscore;
+highp=a;
+}
+
+
+total+=team1[a].pscore;
+
+
+}
+
+cout<<"Name"<<setw(20)<<"Player Number"<<setw(10)<<"Score"<<endl<<"------------------------------------------"<<endl;
+
+for(int b=0; b<item; b++){
+cout<<team1[b].pname<<"     "<<team1[b].pnumber<<"             "<<team1[b].pscore<<endl;
+cout<<endl;
+}
+cout<<endl<<"Team Final Score: "<<total<<endl;
+cout<<endl<<"Highest Score "<<high<<" By Player " <<highp+1<<" Name: "<<team1[highp].pname;
+
+return 0;
+
+}
+

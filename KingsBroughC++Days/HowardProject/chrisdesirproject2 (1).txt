@@ -1,0 +1,41 @@
+# include <iostream>
+using namespace std;
+
+int main()
+{
+	int x;
+	cout<<"Enter input to display row and colum of stars press 0 to quit"<<endl;
+
+	do{
+	
+	
+	cin>>x;
+		
+	if(x>=15&&x<0)
+{
+	
+		cout<<"Sorry can't be 15" <<endl<<"Try again";
+}
+
+else
+	
+	for(int i=0; i<x; i++)
+{
+		cout<<endl;
+	
+		for(int j=0; j<x; j++)
+			cout<<"X";
+}
+
+
+if(x<=15&&x>0)
+	cout<<"\nEnter input again"<<endl;
+
+	}
+	
+	while(x!=0);
+			cout<<"Goodbye";	
+
+
+return 0;
+}

@@ -1,0 +1,65 @@
+# include <iostream>
+# include <string>
+# include <iomanip>
+using namespace std;
+
+struct member{
+	string name[12];
+	int number[12]; 
+	int points[12];
+};
+
+void Sum(member);
+void Table(member);
+void MVP(member);
+
+int main()
+{
+	
+	member team;
+	
+		for(int a=0; a<12; a++)
+		{
+			cout<<"Enter a soccer player name: ";
+			cin.ignore();
+			cin>>team.name[a];
+			cout<<"Enter their total points scored: "<<endl;
+			cin>>team.points[a];
+			cout<<"Enter their number (number on their jersey)"<<endl;
+			cin>>team.number[a];
+			
+		}
+		
+		Sum(team);
+		Table(team);
+		MVP(team);
+
+}
+
+void Sum(member s)
+{
+	int sum=0;
+	for(int i=0; i<12; i++)
+	{
+		sum+=s.points[i];
+	}
+	cout<<"Total points are "<<sum<<endl;
+}
+
+void Table(member p)
+{
+	cout<<"Number"<<setw(4)<<"Name"<<setw(4)<<"Ponts"<<endl;
+		for(int t=0;t<12;t++)
+			cout<<p.points[t]<<setw(4)<<p.name[t]<<setw(4)<<p.points[t]<<endl;
+}
+
+void MVP(member high)
+{
+	int best=0, c=0;
+	for(int c=0; c<12; c++)
+	{
+		if(high.points[c]>best)
+			best=high.points[c];
+	}
+	cout<<"The MVP in your selection, based on points sored is: "<<best<<endl;
+}

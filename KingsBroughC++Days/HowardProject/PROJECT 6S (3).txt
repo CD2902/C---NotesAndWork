@@ -1,0 +1,66 @@
+# include <iostream>
+using namespace std;
+
+
+double charge(int,double,double,double);
+double charge(double,double);
+
+
+int main()
+{
+char choice;
+int hosday;
+double hoscharge,hosservice,hosdrate,patientcost;
+cout<<"Type I For In-Patient or type O for Out-Patient\n";
+cin>>choice;
+
+	if(choice=='I'||choice=='i')
+	{
+	cout<<" Number of days spent in the hospital\n";
+	cin>>hosday;
+	cout<<" The daily rate\n";
+	cin>>hosdrate;
+	cout<<" Hospital medication charges\n";
+	cin>>hoscharge;
+	cout<<" Charges for hospital services (lab tests, etc.)\n";
+	cin>>hosservice;
+	
+		if(hosday<0 || hosdrate<0|| hoscharge<0||hosservice<0)
+		{
+			cout<<"Sorry No Negative Number\n";
+		}
+		else
+		{
+			cout<<"Total Charge In-Patient: $"<<charge(hosday,hosdrate,hoscharge,hosservice);
+		}
+
+	}
+	else if(choice=='O'||choice=='o')
+	{
+		cout<<" Charges for hospital services (lab tests, etc.)\n";
+		cin>>hosservice;
+		cout<<" Hospital medication charges\n";
+		cin>>hoscharge;
+			if(hoscharge<0||hosservice<0)
+			cout<<"Sorry No Negative Number\n";
+
+	else
+	cout<<"Total Charge for Out-Patient: $"<<charge(hosservice,hoscharge);
+
+}
+else
+cout<<"Ssry Must type I for In-Patient or O for Out-Patient";
+return 0;
+
+}
+
+double charge(int day,double rate,double charge,double service)
+{
+return day*rate*charge*service;
+}
+
+
+double charge(double orate, double oduble)
+{
+return orate*oduble;
+}

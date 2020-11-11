@@ -1,0 +1,40 @@
+# include <iostream>
+using namespace std;
+
+struct team
+{
+	string pname;
+	int pnumber;
+	double pscore;
+};
+
+
+int main()
+{
+	const int item=2;
+	team team1[item];
+	long int total=0;
+	
+	for(int a=0; a<item; a++){
+		cout<<"Enter Player "<<a+1<<" Name\n";
+		cin>>team1[a].pname;
+		cout<<"Enter Player "<<a+1<<" Number\n";
+		cin>>team1[a].pnumber;
+		cout<<"Enter Player "<<a+1<<" Score\n";
+		cin>>team1[a].pscore;
+		total+=team1[a].pscore;
+	
+		
+	}
+	
+	for(int b=0; b<item; b++){
+		cout<<"Name: "<<team1[b].pname<<endl;
+		cout<<"Player # : "<<team1[b].pnumber<<endl;
+		cout<<"Score : "<<team1[b].pscore<<endl;
+		cout<<endl;
+}
+	cout<<endl<<"Team Final Score: "<<total;
+
+return 0;
+	
+}

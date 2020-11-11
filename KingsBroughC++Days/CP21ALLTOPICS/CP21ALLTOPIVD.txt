@@ -1,0 +1,236 @@
+# include <iostream>
+# include <iomanip>
+# include <vector>
+# include <string>
+using namespace std;
+
+const int col=20;//You can make the seats smaller or bigger 
+const int row=15;//you can make the row smaller or bigger
+
+void input1(double [][col], int  );  //Problem 1
+void input2(char [][col], int );//Problem 2
+void input3(char [][col],double [][col], int&);//Problem 3
+void input4(char [][col],double[][col], int, double&);//Problem 4
+void input5(char [][col],int);//Problem 5
+void input6(char [][col],double [][col],int);//Problem 6
+void input7(char [][col],double [][col],double&);//Problem 7
+
+
+int main()
+{
+	int counter;// counts how many avaliable seats for function input 3 problem 3
+	double totals=0;// counts the total profit for function input 4 problem 4 and reduce a profit for input 7 problem 7
+	char yesno;//for the while loop of main
+	do
+	{
+	
+	
+	double  audi[row][col];//The arrays price of the rows and collums for the audition 
+	char	graphaudi[row][col];  // the arrays that display row and colums audition
+	char choice ; //choices in main
+	
+	cout<<"1 Enter Price Per Row, Defualt is 10 if press nothing \n"
+		<<"2 Display Available Seats\n"
+		<<"3 Purchase a Seat\n"
+		<<"4 Display Total Tickets\n"
+		<<"5 Display number of available seats\n"
+		<<"6 Display Total Sales\n"
+		<<"7 Return a Ticket\n";
+		cin>>choice;
+		
+	
+	switch(choice)
+	{
+		case '1':
+				input1(audi,row);
+				break;
+		case '2':
+				input2(graphaudi,row);
+				break;			
+		case '3':
+				input3(graphaudi,audi,counter);
+				
+				break;	
+		case '4':
+				input4(graphaudi,audi,row,totals);
+				break;	
+		case '5':
+				input5(graphaudi,row);
+				break;	
+		case '6':
+				input6(graphaudi,audi,row);
+				break;	
+		case '7':input7(graphaudi,audi,totals);
+				break;	
+		default: cout<< "Invalid Input\n";
+	}
+	cout<<"Do you want to continue? Y for YES , N for NO"<<endl;
+	cin>>yesno;
+}while(yesno=='y'||'Y');
+cout<<"Goodbye end of program"<<endl;
+return 0;
+}
+	
+
+void  input1 (double inpaudi[][col], int frow)
+{
+	double total=0;
+	cout<<"Enter The Price For the Seats\n";
+	for(int a=0; a<frow; a++)
+	{
+		cout<<"Enter Seats for row "<< a+1<<endl;
+		for(int b=0; b<col; b++)
+		{
+			inpaudi[a][b]=10;	
+			cout<<"Seat #: "<< b+1<<endl<<"$";
+			cin>>inpaudi[a][b];
+		}
+		
+	}
+}
+
+void input2(char inp2grapaudi[][col],int frow)
+{
+	for(int c=0; c<frow; c++)
+	{
+		for(int d=0; d<col; d++)
+		{
+			if(inp2grapaudi[c][d]=='*')
+				inp2grapaudi[c][d]='*';
+			else
+				inp2grapaudi[c][d]='#';
+		}
+	}
+	
+	for(int e=0; e<frow; e++)
+	{
+		cout<<"Row "<<e+1<<setw(1);
+		for(int f=0; f<frow; f++)
+			cout<<inp2grapaudi[e][f]<<setw(1);
+		cout<<endl;			
+	}
+	
+	
+}
+
+void input3(char inp3graphaudi[][col],double inp3audi[][col],int &count)
+{
+	int prow, pseat;
+	char choices;
+	cout<<"What seat you want to purchase"<<endl;
+	cout<<"What row"<<endl;
+	cin>>prow;
+	cout<<"What seat"<<endl;
+	cin>>pseat;
+	if(inp3graphaudi[prow][pseat]=='*')
+		cout<<"Its Taken Sorry";
+	else if (inp3graphaudi[prow][pseat]=='#')
+	{
+	
+		cout<<"Its available do you want to purchase Y for yes and N for no\n";
+		cin>>choices;
+		if (choices=='y'||'Y')
+		{
+			inp3graphaudi[prow][pseat]='*';
+			if (!isdigit(inp3audi[prow][pseat]))//if the user did not press 1, then default number for what you purchase will be 10
+			{
+				inp3audi[prow][pseat]=10;
+				
+			}
+			cout<< "price $" << inp3audi[prow][pseat]<<endl;
+			count++;
+		}
+		else if (choices=='n'||'N')
+		{
+			cout<<"Come back again, bakck to menu"<<endl;
+		}
+	}
+		
+}
+
+void input4(char inp4graphaudi[][col], double inp4audi[][col],int rrow, double &total)
+{
+	for(int g=0; g<rrow;g++)
+	{
+		for(int h=0; h<col; h++)
+			if(inp4graphaudi[g][h]=='*')
+				total+=inp4audi[g][h];
+	}
+	cout<<"Total: $"<<total<<endl;
+}
+
+void input5(char inp5graphaudi[][col],int arow)
+{
+	char inp5choice;
+	int coun=0;
+	cout<<"Press 1 For how many seats in each row\nPress 2 for total of avaliable seats\n";
+	cin>>inp5choice;
+	switch(inp5choice)
+	{
+		case '1':
+			for(int k=0; k<arow; k++)
+			{
+				cout<<"row "<<k+1<<endl;
+				int coun2=0;
+				
+				for(int l=0; l<col; l++)
+					if (inp5graphaudi[k][l]=='#')
+					{
+					coun2++	;
+					}
+				cout<<"Available: "<<coun2<<endl;
+			}
+				break;
+		case '2':
+		
+		for(int i=0; i<arow; i++)
+	{
+			for(int j=0; j<col; i++)
+				if (inp5graphaudi[i][j]=='#')
+			{
+				coun++;
+			}
+			
+	}
+			cout<<"Total of avaliavle seates :"<<coun<<endl;
+			break;
+				default: 
+					cout<<"Wrong input validation back to menu"<<endl;
+	}
+		
+}
+
+void input6(char inp6graphaudi[][col], double inp6audi[][col], int inp6row)
+{
+	double tsales=0;
+	
+	for(int n=0; n<inp6row; n++)
+	{
+		for( int m=0; m<col; m++)
+		{
+			if(inp6graphaudi[n][m]=='*')
+				tsales+=inp6audi[n][m];
+		}
+		
+	}
+		cout<<"Total Profit $:" <<tsales<<endl;
+
+}
+
+void input7(char inp6graphaudi[][col], double inp6audi[][col], double &inp6total)
+{
+	int inp6row, inp6col;
+	cout<<"enter Row to delete"<<endl;
+	cin>>inp6row;
+	cout<<"enter Colum to delete"<<endl;
+	cin>>inp6col;
+	
+	if(inp6graphaudi[inp6row][inp6col]=='*')
+	{
+		inp6graphaudi[inp6row][inp6col]	='#';
+		inp6total-=inp6audi[inp6row][inp6col];
+	}
+	else 
+		cout<<"sorry invalid, it is already available"<<endl;
+	
+}

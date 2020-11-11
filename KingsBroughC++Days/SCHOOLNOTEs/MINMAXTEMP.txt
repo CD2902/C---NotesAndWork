@@ -1,0 +1,55 @@
+# include <iostream>
+using namespace std;
+
+template <class T1,class T2>
+int min(T1 &num1, T2 &num2 )
+{
+	if (sizeof(num1)<sizeof(num2))
+		return sizeof(num1);
+	else if (sizeof(num2)<sizeof(num1))
+		return sizeof(num2);
+
+}
+
+template <class T1, class T2>
+int max (T1 &numm1, T2 &numm2)
+{
+	if (sizeof(numm1)>sizeof(numm2))
+		return sizeof(numm1);
+	else if (sizeof(numm2)>sizeof(numm1))
+		return sizeof(numm2);
+
+}
+
+int main()
+{
+	int ival=5;
+	double dval=5.45;
+	char cval= 'f';
+	string sval= "hello";	
+	
+		
+	
+	
+	
+	
+	cout<<"1     "<<"2    "<<"Size Of 1    "<< "Size of 2   "<<"MIN      "<<"MAX"
+	<<endl<<"------------------------------------------------"<<endl;
+	cout<<ival<<"   "<<dval<<"       "<<sizeof(ival)<<"            "<<sizeof(dval)<<"       "<<min(ival,dval)<<"      "<<max(ival,dval)<<endl;
+	cout<<cval<<"   "<<sval<<"      "<<sizeof(cval)<<"            "<<sizeof(sval)<<"       "<<min(cval,sval)<<"      "<<max(cval,sval)<<endl;
+	
+	return 0;
+}
+
+
+/*1     2    Size Of 1    Size of 2   MIN      MAX
+------------------------------------------------
+5   5.45       4            8       4      8
+f   hello      1            8       1      8
+
+--------------------------------
+Process exited after 0.009415 seconds with return value 0
+Press any key to continue . . .*/
+
+
+

@@ -1,0 +1,105 @@
+// Christopher Desir
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	
+	const double pi=3.14159;
+	double circle, rectangle,  triangle, length, width, height, base;
+	int enter; 
+	double rad;
+	
+	cout<<"Press 1 if you want to determine the area of the Circle"<<endl;
+	cout<<"Press 2 if you want to determine the area of the Rectangle"<<endl;
+	cout<<"Press 3 if you want to determine the area of the Triangle"<<endl;
+	cout<<"Press 4 if you want to quit"<<endl<<endl<<endl;
+
+	
+	
+	
+	cin>>enter;
+	
+	
+	if(enter==1){
+		cout<<"Whats the radius "<<endl;
+		cin>> rad;
+		    if(rad<=0){
+			cout<<"You can't enter negative number"<<endl;
+		}else{
+		circle= pi*pow(rad,2);
+		cout<<"The area of the circle is "<<circle<<endl;
+		}
+   }
+		
+    else if(enter==2){
+        cout<< "Whats the Length, Width and Height?  "<<endl;
+        cin>>length>>width>>height;
+            if(length<=0 || width<=0 || height<=0){
+            cout<<"You can't enter negative number!"<<endl;
+			}else{		
+        rectangle= length*width*height;
+        cout<<"The are of the circle is "<<rectangle<<endl;
+		}
+   }
+   
+    else if(enter ==3){
+        cout <<"What the Base and Height? "<<endl;
+        cin>>base>>height;
+        if(base<=0 || height<=0){
+        cout<<"You can't enter negative number!"<<endl;
+       }else{
+    	
+        triangle=base*height*.5;
+        cout<<"The area of the triangle is "<<triangle<<endl;
+		}
+}
+    else if(enter==4){
+    cout<<"GoodBye"<<endl;
+    
+	}else{
+		cout<<"You did not follow instruction!"<<endl;
+	
+}
+
+system("pause");
+return 0;
+         
+}
+	
+	
+	/* 
+Press 1 if you want to determine the area of the Circle
+Press 2 if you want to determine the area of the Rectangle
+Press 3 if you want to determine the area of the Triangle
+Press 4 if you want to quit
+
+
+1
+Whats the radius
+3
+The area of the circle is 28.2743
+
+--------------------------------
+Process exited after 4.456 seconds with return value 0
+Press any key to continue . . .
+
+
+Press 1 if you want to determine the area of the Circle
+Press 2 if you want to determine the area of the Rectangle
+Press 3 if you want to determine the area of the Triangle
+Press 4 if you want to quit
+
+
+1
+Whats the radius
+-2
+You can't enter negative number
+
+--------------------------------
+Process exited after 3.982 seconds with return value 0
+Press any key to continue . . .
+
+
+
+*/

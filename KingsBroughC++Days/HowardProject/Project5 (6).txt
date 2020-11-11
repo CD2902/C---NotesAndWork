@@ -1,0 +1,95 @@
+# include <iostream>
+# include <iomanip>
+using namespace std;
+
+class EmployeeInfo
+{
+	private:
+		string name,department,position;
+		int id;
+	public:
+		//Constructor 1
+		EmployeeInfo(string n, int idn, string d, string p)
+		{
+			name=n;
+			id=idn;
+			department=d;
+			position=p;
+		}
+		//Constructor 2
+		EmployeeInfo(string na, int idnum)
+		{
+			name=na;
+			id=idnum;
+			department=" ";
+			position= " ";
+		}
+		
+		//Constructor 3
+		
+		EmployeeInfo()
+		{
+			name="";
+			department="";
+			position="";
+			id=0;
+		}
+		
+		void setname( string sname)
+		{
+			name=sname;
+		}
+		void setdep(string sdep)
+		{
+			 department=sdep;
+		}
+		void setpos(string spos)
+		{
+			position=spos;
+		}
+		void setid(int sid)
+		{
+			id=sid;
+		}
+		
+		string gname()
+		{
+			return name;
+		}
+		string gdep()
+		{
+			return department;
+		}
+		string getp()
+		{
+			return position ;
+		}
+		
+		int gid()
+		{
+			return id;
+		}
+		
+};
+
+int main()
+{
+	EmployeeInfo obj1("Susan Meyers",47899,"Accounting","Vice President");
+	EmployeeInfo obj2("Mark Jones",39119);
+	obj2.setdep("IT");
+	obj2.setpos("Programmer");
+	EmployeeInfo obj3;
+	obj3.setname("Joe Rogers");
+	obj3.setid(81774);
+	obj3.setdep("Manufacturing");
+	obj3.setpos("Engineer");
+
+
+cout<<"Name"<<setw(20)<<"ID Number"<<setw(20)<<" Department"<<setw(20)<<"Position"<<endl<<endl;
+cout<<obj1.gname()<<setw(9)<<obj1.gid()<<setw(25)<<obj1.gdep()<<setw(25)<<obj1.getp()<<endl<<endl;
+cout<<obj2.gname()<<setw(9)<<obj2.gid()<<setw(25)<<obj2.gdep()<<setw(25)<<obj2.getp()<<endl<<endl;
+cout<<obj3.gname()<<setw(9)<<obj3.gid()<<setw(25)<<obj3.gdep()<<setw(25)<<obj3.getp()<<endl<<endl;
+
+return 0;
+}
+
